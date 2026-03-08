@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Indie founders waste time building custom semantic search solutions. | Indie founder</title>
+<meta name="description" content="Access a simple semantic search API for Slack to enhance team communication.">
+<meta name="keywords" content="Lack Of Semantic Search API In Slack, Indie founder, integration-0">
+<meta name="author" content="page-pilot">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Indie founders waste time building custom semantic search solutions.">
+<meta property="og:description" content="Access a simple semantic search API for Slack to enhance team communication.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://themirror683128.github.io/lack-of-semantic-search-api-in-slack/">
+<link rel="canonical" href="https://themirror683128.github.io/lack-of-semantic-search-api-in-slack/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Lack Of Semantic Search API In Slack","description":"A simple semantic search API for Slack would directly address integration challenges faced by indie founders.","url":"https://themirror683128.github.io/lack-of-semantic-search-api-in-slack/","datePublished":"2026-03-08","audience":{"@type":"Audience","audienceType":"Indie founders at early-stage startups leveraging Slack for team communication"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What problem does this solve?","acceptedAnswer":{"@type":"Answer","text":"This provides a straightforward way to implement semantic search in Slack, eliminating the need for complex workarounds."}},{"@type":"Question","name":"Who is this for?","acceptedAnswer":{"@type":"Answer","text":"Indie founders at early-stage startups who rely on Slack for team communication and need efficient search capabilities."}},{"@type":"Question","name":"Isn't there a risk that Slack won't support this?","acceptedAnswer":{"@type":"Answer","text":"While there is a market risk, the demand for a semantic search API is evident, and Slack's internal capabilities suggest potential for external support."}}]}</script>
+<style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--bg:#fff;--text:#0a0a0a;--accent:#ff3300;--dim:#666;--surface:#f5f5f5}
+    html{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,sans-serif;font-size:17px}
+    body{max-width:800px;margin:0 auto;padding:clamp(24px,5vw,64px) clamp(16px,4vw,32px)}
+    a{color:var(--accent)}a:hover{opacity:.7}
+
+    .label{font-size:.7rem;font-weight:900;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+    .label .icon{width:16px;height:16px;color:var(--accent)}
+
+    section{padding:clamp(48px,7vh,80px) 0;border-bottom:2px solid var(--text)}
+
+    .hero{padding:clamp(56px,9vh,96px) 0;position:relative;overflow:hidden;
+      background:radial-gradient(ellipse at 70% 20%,rgba(255,51,0,0.05) 0%,transparent 60%)}
+    .hero-layout{position:relative;z-index:1}
+    .hero-watermark{position:absolute;top:-10%;right:-5%;font-size:clamp(6rem,18vw,14rem);font-weight:900;
+      color:rgba(255,51,0,0.04);transform:rotate(-8deg);pointer-events:none;user-select:none;line-height:1;z-index:0;text-transform:uppercase}
+    .hero-decoration{position:absolute;top:10%;right:0;width:120px;height:120px;color:var(--accent);opacity:.08;z-index:0}
+    @media(max-width:600px){.hero-decoration{display:none}.hero-watermark{font-size:5rem}}
+
+    h1{font-size:clamp(2rem,5vw,4rem);font-weight:900;line-height:1.05;margin-bottom:20px}
+    .subhead{font-size:clamp(.95rem,1.8vw,1.15rem);color:#333;line-height:1.7;max-width:600px;margin-bottom:32px}
+    h2{font-size:clamp(1.2rem,2.5vw,1.8rem);font-weight:900;margin-bottom:20px}
+
+    .hero-stat{display:inline-flex;align-items:baseline;gap:14px;margin-bottom:28px;padding:20px 28px;border-left:4px solid var(--accent);background:var(--surface)}
+    .stat-number{font-size:clamp(2rem,5vw,3rem);font-weight:900;color:var(--accent);line-height:1}
+    .stat-label{font-size:.9rem;color:var(--dim)}
+
+    .divider{width:100%;height:24px;color:var(--accent);margin-bottom:8px}
+
+    .evidence-grid{display:flex;flex-direction:column;gap:20px}
+    .evidence-card{position:relative}
+    .evidence-card .quote-mark{position:absolute;top:-8px;left:8px;width:36px;height:36px;color:var(--accent)}
+    blockquote{background:var(--text);color:#f5f5f5;padding:24px 28px;position:relative;transition:transform .3s,box-shadow .3s}
+    .evidence-card:nth-child(odd) blockquote{transform:rotate(-0.4deg)}
+    .evidence-card:nth-child(even) blockquote{transform:rotate(0.6deg)}
+    .evidence-card:hover blockquote{transform:rotate(0deg);box-shadow:0 8px 32px rgba(0,0,0,.12)}
+    blockquote p{line-height:1.65;font-size:.95rem}
+    cite{display:block;font-size:.72rem;color:#999;margin-top:10px;font-style:normal}
+    cite a{color:#999}cite a:hover{color:#fff}
+
+    .cost p{line-height:1.8;color:#333;font-size:.98rem}
+
+    .faq-item{display:flex;gap:16px;align-items:flex-start;margin:24px 0;padding-bottom:24px;border-bottom:1px solid #e5e5e5}
+    .faq-item:last-child{border-bottom:none}
+    .faq-num{font-size:1.4rem;font-weight:900;color:var(--accent);line-height:1;flex-shrink:0;width:28px}
+    .faq-content{flex:1}
+    .faq-q{font-weight:700;font-size:1rem;margin-bottom:10px;color:var(--text)}
+    .faq-a{line-height:1.7;color:#333;font-size:.95rem}
+
+    .cta-section{background:var(--accent);color:#fff;padding:clamp(48px,7vh,72px) clamp(24px,5vw,48px);margin:0 calc(-1 * clamp(16px,4vw,32px));border-bottom:none}
+    .cta-section .label{color:rgba(255,255,255,.6)}
+    .cta-section h2{color:#fff}
+    .cta-note{color:rgba(255,255,255,.7);font-size:.85rem;margin-bottom:24px}
+    .cta-section form{display:flex;flex-direction:column;gap:12px;max-width:480px}
+    .cta-section input[type=email]{padding:14px 16px;border:2px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#fff;font-family:inherit;font-size:1rem;outline:none}
+    .cta-section input[type=email]:focus{border-color:#fff}
+    .cta-section input[type=email]::placeholder{color:rgba(255,255,255,.5)}
+    .cta-section button[type=submit]{padding:16px 32px;background:#fff;border:none;color:var(--accent);font-family:inherit;font-size:1rem;font-weight:900;cursor:pointer;transition:opacity .2s}
+    .cta-section button[type=submit]:hover{opacity:.9}
+    .cta-section .counter-visual{margin-top:12px}
+    .cta-section .counter-number{color:#fff}
+    .cta-section .counter-text{color:rgba(255,255,255,.6)}
+
+    .non-cta-form{display:flex;flex-direction:column;gap:12px;max-width:480px}
+    .non-cta-form input[type=email]{padding:14px 16px;border:2px solid var(--text);background:#fff;font-family:inherit;font-size:1rem;outline:none}
+    .non-cta-form input[type=email]:focus{border-color:var(--accent)}
+    .non-cta-form input[type=email]::placeholder{color:#aaa}
+    .non-cta-form button[type=submit]{padding:16px 32px;background:var(--accent);border:none;color:#fff;font-family:inherit;font-size:1rem;font-weight:900;cursor:pointer;transition:background .2s}
+    .non-cta-form button[type=submit]:hover{background:#cc2900}
+
+    .counter-visual{margin-top:12px}
+    .counter-number{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;color:var(--accent);display:block;line-height:1.2}
+    .counter-text{font-size:.75rem;color:var(--dim)}
+
+    footer{padding:24px 0;font-size:.75rem;color:#ccc}
+    
+    @keyframes fadeSlideUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+    @keyframes pulse{0%,100%{opacity:.6}50%{opacity:1}}
+  
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="label"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4v3a2 2 0 104 0V2h4v8h-3a2 2 0 100 4h3v8H2V14h3a2 2 0 100-4H2V2h4v3a2 2 0 104 0V2z"/></svg>Indie founder</div>
+</header>
+
+<main>
+
+  <section class="hero" data-no-anim>
+    <div class="hero-watermark">waste</div>
+    <div class="hero-decoration"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4v3a2 2 0 104 0V2h4v8h-3a2 2 0 100 4h3v8H2V14h3a2 2 0 100-4H2V2h4v3a2 2 0 104 0V2z"/></svg></div>
+    <div class="hero-layout">
+      <div class="label"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4v3a2 2 0 104 0V2h4v8h-3a2 2 0 100 4h3v8H2V14h3a2 2 0 100-4H2V2h4v3a2 2 0 104 0V2z"/></svg>Indie founder</div>
+      <h1>Indie founders waste time building custom semantic search solutions.</h1>
+      <p class="subhead">Access a simple semantic search API for Slack to enhance team communication.</p>
+      
+      
+    <form class="non-cta-form" action="mailto:mark@openclaw.io?subject=Waitlist: Lack%20Of%20Semantic%20Search%20API%20In%20Slack" method="POST">
+      <input type="hidden" name="page" value="lack-of-semantic-search-api-in-slack">
+      <input type="hidden" name="_subject" value="Waitlist signup: lack-of-semantic-search-api-in-slack">
+      <input type="email" name="email" placeholder="your@email.com" required autocomplete="email">
+      <button type="submit">Join the Waitlist</button>
+    </form>
+      
+    <div class="counter-visual">
+      <span class="counter-number">52</span>
+      <span class="counter-text">people already joined</span>
+    </div>
+    </div>
+  </section>
+
+  <section class="proof">
+    <svg class="divider" viewBox="0 0 800 24" preserveAspectRatio="none" aria-hidden="true">
+      <line x1="0" y1="0" x2="800" y2="24" stroke="currentColor" stroke-width="2" opacity="0.08"/>
+    </svg>
+    <div class="label"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4v3a2 2 0 104 0V2h4v8h-3a2 2 0 100 4h3v8H2V14h3a2 2 0 100-4H2V2h4v3a2 2 0 104 0V2z"/></svg>What people are saying</div>
+    <h2>You’re not alone</h2>
+    <div class="evidence-grid">
+    <article class="evidence-card">
+      <svg class="quote-mark" viewBox="0 0 40 40" aria-hidden="true"><text x="0" y="36" font-family="system-ui,sans-serif" font-size="52" font-weight="900" fill="currentColor" opacity="0.06">“</text></svg>
+      <blockquote>
+        <p>The irony: Slack AI already vectorizes all messages for semantic search internally.</p>
+        <cite><a href="https://news.ycombinator.com/item?id=47285781" target="_blank" rel="noopener">Hacker News</a></cite>
+      </blockquote>
+    </article>
+    <article class="evidence-card">
+      <svg class="quote-mark" viewBox="0 0 40 40" aria-hidden="true"><text x="0" y="36" font-family="system-ui,sans-serif" font-size="52" font-weight="900" fill="currentColor" opacity="0.06">“</text></svg>
+      <blockquote>
+        <p>So we built our own pipeline: pull messages, embed externally, store in pgvector, sync continuously.</p>
+        <cite><a href="https://news.ycombinator.com/item?id=47285781" target="_blank" rel="noopener">Hacker News</a></cite>
+      </blockquote>
+    </article>
+    <article class="evidence-card">
+      <svg class="quote-mark" viewBox="0 0 40 40" aria-hidden="true"><text x="0" y="36" font-family="system-ui,sans-serif" font-size="52" font-weight="900" fill="currentColor" opacity="0.06">“</text></svg>
+      <blockquote>
+        <p>We’re reaching out to Slack leadership to request a simple semantic.search API endpoint.</p>
+        <cite><a href="https://news.ycombinator.com/item?id=47285781" target="_blank" rel="noopener">Hacker News</a></cite>
+      </blockquote>
+    </article></div>
+  </section>
+
+  <section class="cost">
+    <svg class="divider" viewBox="0 0 800 24" preserveAspectRatio="none" aria-hidden="true">
+      <line x1="0" y1="24" x2="800" y2="0" stroke="currentColor" stroke-width="2" opacity="0.08"/>
+    </svg>
+    <div class="label">The status quo</div>
+    <h2>What it costs to live with this</h2>
+    <p>Building custom pipelines for semantic search in Slack is a time-consuming and costly workaround. Indie founders spend valuable hours embedding messages externally and syncing them continuously. This not only diverts focus from core business activities but also increases operational complexity. The lack of a dedicated API means founders are left to navigate a fragmented solution that hampers productivity.</p>
+  </section>
+
+  <section class="faq">
+    <svg class="divider" viewBox="0 0 800 24" preserveAspectRatio="none" aria-hidden="true">
+      <line x1="0" y1="0" x2="800" y2="24" stroke="currentColor" stroke-width="2" opacity="0.08"/>
+    </svg>
+    <div class="label">Questions</div>
+    <h2>FAQ</h2>
+    
+    <div class="faq-item">
+      <div class="faq-num">1</div>
+      <div class="faq-content">
+        <div class="faq-q">What problem does this solve?</div>
+        <div class="faq-a">This provides a straightforward way to implement semantic search in Slack, eliminating the need for complex workarounds.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-num">2</div>
+      <div class="faq-content">
+        <div class="faq-q">Who is this for?</div>
+        <div class="faq-a">Indie founders at early-stage startups who rely on Slack for team communication and need efficient search capabilities.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-num">3</div>
+      <div class="faq-content">
+        <div class="faq-q">Isn't there a risk that Slack won't support this?</div>
+        <div class="faq-a">While there is a market risk, the demand for a semantic search API is evident, and Slack's internal capabilities suggest potential for external support.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="label">Early access</div>
+    <h2>Be first to know when this ships.</h2>
+    <p class="cta-note">No spam. No pitch. Just a heads-up when it’s ready.</p>
+    
+    <form class="" action="mailto:mark@openclaw.io?subject=Waitlist: Lack%20Of%20Semantic%20Search%20API%20In%20Slack" method="POST">
+      <input type="hidden" name="page" value="lack-of-semantic-search-api-in-slack">
+      <input type="hidden" name="_subject" value="Waitlist signup: lack-of-semantic-search-api-in-slack">
+      <input type="email" name="email" placeholder="your@email.com" required autocomplete="email">
+      <button type="submit">Join the Waitlist</button>
+    </form>
+    
+    <div class="counter-visual">
+      <span class="counter-number">52</span>
+      <span class="counter-text">people already joined</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>lack-of-semantic-search-api-in-slack · 2026-03-08</p>
+</footer>
+
+<script>document.querySelectorAll('section:not(.hero),article').forEach(function(el){el.style.opacity='0';el.style.transform='translateY(20px)';el.style.transition='opacity .6s ease,transform .6s ease';new IntersectionObserver(function(entries){if(entries[0].isIntersecting){el.style.opacity='1';el.style.transform='none'}},{threshold:.12}).observe(el)})</script>
+</body>
+</html>
