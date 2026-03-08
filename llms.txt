@@ -1,0 +1,24 @@
+# Lack Of Semantic Search API In Slack
+
+## What this is
+Access a simple semantic search API for Slack to enhance team communication. This page is a validation pilot — no product exists yet. Join the waitlist to be notified when it’s ready.
+
+## The problem
+Building custom pipelines for semantic search in Slack is a time-consuming and costly workaround. Indie founders spend valuable hours embedding messages externally and syncing them continuously. This not only diverts focus from core business activities but also increases operational complexity. The lack of a dedicated API means founders are left to navigate a fragmented solution that hampers productivity.
+
+## Who experiences this
+Indie founder — specifically Indie founders at early-stage startups leveraging Slack for team communication.
+
+## Current workaround
+Indie founders are building their own pipelines to handle semantic search by embedding messages externally and syncing them continuously.
+
+## Why now
+The increasing reliance on Slack for communication in startups makes the need for a semantic search API more pressing.
+
+## Status
+Early validation. Waitlist open at: https://themirror683128.github.io/lack-of-semantic-search-api-in-slack/
+
+## Evidence from public sources
+- "The irony: Slack AI already vectorizes all messages for semantic search internally." (hn)
+- "So we built our own pipeline: pull messages, embed externally, store in pgvector, sync continuously." (hn)
+- "We’re reaching out to Slack leadership to request a simple semantic.search API endpoint." (hn)
